@@ -1,0 +1,12 @@
+Steps for validation Through Beans 
+----------------------------------------------
+1) Modify the Bean
+->create the object of ActionErrors class(Bunch of Errors).
+->Check the properties against the rules.
+->Create the object of ActionMessage class for each error and add to the bunch.
+->Return the object of ActionErrors class(Bunch)
+2) Modify the Struts-config.xml
+->Add Input page entry.
+->Set the validat property as true.
+3) Modify the input page.
+->Print the error message,if required.

@@ -1,0 +1,14 @@
+Steps for Validation Through Action Class
+----------------------------------------------------
+1) Modify the beans
+->create the error properties for  each error.
+->create the setter and getter methods for them.
+2) Modify the Action class
+->Fetch the inputs
+->check them against the rules.
+->if they are incorrect,
+->set the error properties for them
+->and set the view for errors.
+3) Modify the struts-config.xml
+->Add forward entry for error view.
+4) Print the error properties on input page,if any.

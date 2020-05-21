@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 26, 2018 7:45:51 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="hib.Emp" table="emp" catalog="test">
+        <id name="empno" type="int">
+            <column name="empno" />
+            <generator class="assigned" />
+        </id>
+        <property name="ename" type="string">
+            <column name="ename" length="10" />
+        </property>
+        <property name="job" type="string">
+            <column name="job" length="10" />
+        </property>
+        <property name="sal" type="java.lang.Integer">
+            <column name="sal" />
+        </property>
+        <property name="deptno" type="java.lang.Integer">
+            <column name="deptno" />
+        </property>
+    </class>
+</hibernate-mapping>

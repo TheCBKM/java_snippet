@@ -1,0 +1,13 @@
+Steps for Automatic validations
+----------------------------------------
+1) Modify Struts-config.xml
+->Add input page entry
+->set validate=true
+2) Modify Beans
+->change the parent class of beans from org.apache.struts.action.ActionForm
+to org.apache.struts.validator.ValidatorForm
+->Create the reference of ActionErrors class(bunch of errors) and fetch the object of ActionErrors class from parent.
+->return the object of ActionErrors class.
+3) Configure Validaton.xml for validations.
+4) Refere validator-rules.xml.
+5) Print the errors on input page.

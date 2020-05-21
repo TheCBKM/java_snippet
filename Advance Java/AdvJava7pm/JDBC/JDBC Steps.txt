@@ -1,0 +1,37 @@
+Steps of JDBC Connectivity
+---------------------------------------
+1) Load/Register the drivers.
+Class.forName(driver class name) throws ClassNotFoundException
+
+2) Establish the connection
+->Connection DriverManager.getConnection(url) throws SQLException->Connection DriverManager.getConnection(url,login,password) throws SQLException
+
+3) Prepare sql query
+String qry="select * from emp";
+
+4) Create the statement object
+a)For simple queries
+Statement connection.createStatement() throws SQLException
+b) for parameterized queries
+PreparedStatement con.prepareStatement(qry) throws SQLException
+c) to call database's procedures and functions
+CallableStatement con.prepareCall() throws SQLException
+
+
+5) Dispatch sql query to database engine
+a) for dml/ddl queries
+int executeUpdate()  throws SQLException
+b) for select queries
+ResultSet executeQuery() throws SQLException
+c) for calling procedure or function of the database
+execute() throws SQLException
+
+6) Close the connection
+connection.close() throws SQLException
+
+
+
+
+
+
+

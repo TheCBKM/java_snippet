@@ -1,0 +1,14 @@
+Element of Event
+--------------------------
+1) Event
+2) Event Source
+3) Event Listeners
+4) Event Handling
+
+
+Steps of Event Handling
+---------------------------------
+1) Identify the event.
+2) Implements the conern Listener
+3) Override all the methods of that listener
+4) Register the component(Event Source) with that listener.

@@ -1,0 +1,49 @@
+Navigation Methods of ResultSet
+--------------------------------------------
+
+1) next();
+2) previous();
+3) beforeFirst();
+4) afterLast();
+5) absolute(int);
+6) relative(+/- int);
+
+
+
+Attributes of ResultSet Class
+---------------------------------------
+1) TYPE_FORWARD_ONLY  (by default)
+2) TYPE_SCROLL_SENSITIVE
+3) TYPE_SCROLL_INSENSITIVE
+
+
+4) CONCUR_READ_ONLY  (by default)
+5) CONCUR_UPDATABLE
+----------------------------------------------------------------------------------- 
+
+TO delete a row
+-----------------------
+1) go to desired row
+2) call deleteRow() method of ResultSet Class.
+
+
+To Update a row
+------------------------
+1) go to desired row
+2) update desired columns through update methods of ResultSet class.
+3) call updateRow() method of ResultSet Class
+
+
+To Insert a new row
+---------------------------
+
+1) create a new row in the ResultSet  by moveToInsertRow().
+2) update all columns through update methods of ResultSet class.
+3) call insertRow() method of ResultSet Class
+
+
+
+
+
+
+

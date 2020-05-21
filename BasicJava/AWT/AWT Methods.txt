@@ -1,0 +1,14 @@
+
+void setText(String)	       	String getText()
+void setLabel(String)	       	String getLabel()
+void setEchoChar(char)    	char getEchoChar()
+void SetBackground(Color)	Color getBackground()
+void SetForeground(Color)	Color getForeground()
+void setVisible(boolean)	boolean getVisible()
+void setEnabled(boolean)	boolean getEnabled()
+void setSize(double,double)	Dimension getSize()
+void setLocation(x,y)		Point getLocation()
+void setFont(Font)		Font getFont()
+-------------------------------------------------------------------- 
+Color cl=new Color(r,g,b)
+Font ft=new Font(Font name,Style,Size)
